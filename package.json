@@ -2,6 +2,7 @@
   "name": "final-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://glencoden.github.io/lisa-and-rob",
   "dependencies": {
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
