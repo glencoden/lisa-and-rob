@@ -1,0 +1,134 @@
+.Intro {
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("moon.png");
+    background-repeat: no-repeat;
+    background-position: 0vw 60vh;
+    background-size: 100%;
+    transform: scale(1.5, 1);
+    z-index: 50;
+}
+
+#monster_overlay {
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 25;
+    transition-duration: 10s;
+}
+
+.show_monster_overlay {
+    left: 0 !important;
+}
+
+#monster {
+    position: absolute;
+    top: 10vh;
+    left: 100vw;
+    width: 20vw;
+    z-index: 75;
+    animation: monster 2s infinite;
+    transition-duration: 10s;
+}
+
+@keyframes monster {
+    0% { transform: translateY(0); }
+    12% { transform: translateY(12%); }
+    21% { transform: translateY(-10%); }
+    49% { transform: translateY(8%); }
+    55% { transform: translateY(-8%); }
+    89% { transform: translateY(10%); }
+    100% { transform: translateY(0); }
+}
+
+.show_monster {
+    left: -30vw !important;
+}
+
+.show_button {
+    top: 10vh !important;
+}
+
+.character {
+    position: absolute;
+    z-index: 75;
+}
+
+.show_lisa {
+    top: 41vh !important;
+}
+.show_rob {
+    top: 46vh !important;
+}
+
+.star {
+    position: absolute;
+}
+.one {
+    top: 10vh;
+    left: 70vw;
+    width: 3vw;
+}
+.two {
+    top: 20vh;
+    left: 50vw;
+    width: 6vw;
+}
+.three {
+    top: 13vh;
+    left: 87vw;
+    width: 4vw;
+}
+.four {
+    top: 50vh;
+    left: 12vw;
+    width: 3vw;
+}
+.five {
+    top: 3vh;
+    left: 30vw;
+    width: 5vw;
+}
+.six {
+    top: 65vh;
+    left: 21vw;
+    width: 4vw;
+}
+.seven {
+    top: 34vh;
+    left: 80vw;
+    width: 4vw;
+}
+.eight {
+    top: 7vh;
+    left: 9vw;
+    width: 5vw;
+}
+.nine {
+    top: 40vh;
+    left: 61vw;
+    width: 2vw;
+}
+.ten {
+    top: 68vh;
+    left: 90vw;
+    width: 4vw;
+}
+.eleven {
+    top: 30vh;
+    left: 25vw;
+    width: 2vw;
+}

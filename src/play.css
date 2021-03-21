@@ -1,0 +1,11 @@
+.Play {
+    position: relative;
+    display: flex;
+}
+
+.quit {
+    position: absolute;
+    top: 1.7vh;
+    left: 1vw;
+    z-index: 50;
+}

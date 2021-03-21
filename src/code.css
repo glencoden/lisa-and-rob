@@ -1,0 +1,180 @@
+.code_section {
+    position: relative;
+    height: 100vh;
+    width: 30vw;
+    border-left: .5vw solid rgb(48, 79, 132);
+    background-color: rgb(24, 24, 24);
+    z-index: 25;
+}
+
+#help_steps, #help_shoot {
+    cursor: pointer;
+    position: absolute;
+    font-size: 3vw;
+    line-height: 1;
+    padding: 0 1vw .3vw 1vw;
+    border-radius: 50%;
+    color: whitesmoke;
+    background-color: rgb(48, 79, 132);
+}
+
+#help_steps {
+    top: 64.5vh;
+    left: -5vw;
+}
+
+#help_shoot {
+    top: 89.5vh;
+    left: -5vw;
+}
+
+#help_steps_lisa, #help_shoot_lisa {
+    position: absolute;
+    left: -17.5vw;
+    width: 13vw;
+    border: .5vw solid rgb(48, 79, 132);
+    border-radius: 2vw;
+    background-color: whitesmoke;
+}
+
+#help_steps_lisa {
+    top: 47vh;
+}
+
+#help_shoot_lisa {
+    top: 72vh;
+}
+
+.show_cheer {
+    top: 0 !important;
+}
+
+#cheer_img {
+    background-image: url("lisa_and_rob.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 82%;
+}
+
+.script {
+    height: 50vh;
+    padding: 1vw 0;
+    border-bottom: .5vw solid rgb(48, 79, 132);
+    overflow: scroll;
+}
+
+.script div {
+    display: flex;
+    align-items: center;
+    height: 7vw;
+}
+
+.script div:nth-child(odd) {
+    height: 6vw;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 35vh;
+    padding: .5vw 0;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.code_spacer {
+    height: .7vw;
+    width: .7vw;
+    background-color: whitesmoke;
+}
+
+.shoot {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 15vh;
+    padding-right: .5vw;
+    background-color: rgb(48, 79, 132);
+}
+
+#back_btn {
+    width: 3vw;
+    padding: .1vw;
+    margin: 3vh 0 0 13vw;
+    background-color: whitesmoke;
+}
+
+.control_button {
+    cursor: pointer;
+    width: 6vw;
+    padding: .5vw;
+    border: .5vw solid whitesmoke;
+    border-radius: .5vw;
+    background-color: rgb(251, 13, 27);
+    margin: 0 1vw 0 0;
+}
+.control_button:hover {
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-name: wiggle;
+}
+
+.button {
+    cursor: pointer;
+    justify-self: center;
+    align-self: center;
+    padding: .5vw;
+    border-radius: .5vw;
+    background-color: white;
+}
+.button:hover {
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-name: wiggle;
+}
+
+@keyframes wiggle {
+    0% { transform: translate(.1vw, 0); }
+    20% { transform: translate(-.1vw, 0); }
+    40% { transform: translate(.1vw, 0); }
+    60% { transform: translate(-.1vw, 0); }
+    80% { transform: translate(.1vw, 0); }
+    100% { transform: translate(0, 0); }
+}
+
+.script .object, .script .function, .script .number {
+    width: 6vw;
+}
+
+.script .object {
+    border: .5vw solid gold;
+}
+
+.script .function {
+    border: .5vw solid rgb(48, 79, 132);
+}
+
+.script .number {
+    border: .5vw solid rgb(192, 15, 114);
+}
+
+.input .object {
+    width: 7.5vw;
+    border: .5vw solid gold;
+    margin: 0 1vw;
+}
+
+.input .function {
+    width: 7.5vw;
+    border: .5vw solid rgb(48, 79, 132);
+    margin: 0 1.3vw;
+}
+
+.input .number {
+    width: 5.5vw;
+    border: .5vw solid rgb(192, 15, 114);
+    margin: 0 1vw;
+}

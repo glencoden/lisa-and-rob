@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    font-family: 'East Sea Dokdo', cursive;
+    /* font-family: 'Permanent Marker', cursive; */
+    /* font-family: 'Caveat Brush', cursive; */
+    /* font-family: 'Dokdo', cursive; */
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.App {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
